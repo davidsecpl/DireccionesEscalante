@@ -5,11 +5,13 @@ init()
   .then(() => {
     console.log("Initialized database");
   })
-  .cath((err) => {
+  .catch((err) => {
     console.log("Initialized database failed");
     console.log(err);
   });
 
 export default function App() {
-  return <AppNavigator />;
+  return (
+    <AppNavigator />
+  );
 }
